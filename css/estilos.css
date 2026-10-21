@@ -212,3 +212,128 @@ footer p {
     color: var(--color-texto-secundario);
     margin-bottom: 0.3rem;
 }
+
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #17181d;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: var(--color-encabezado);
+    border-bottom: 2px solid var(--color-primario);
+}
+
+th, td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border: 1px solid var(--color-borde);
+}
+
+th {
+    font-family: var(--fuente-titulos);
+    color: #ffffff;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+tbody tr:hover {
+    background-color: rgba(201, 122, 62, 0.12);
+}
+
+/* Formularios */
+form {
+    margin-top: 1rem;
+}
+
+fieldset {
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-size: 1.05rem;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    background-color: #121316;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    color: var(--color-texto);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, outline 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-primario);
+    outline: 2px solid rgba(201, 122, 62, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.4rem;
+    font-family: var(--fuente-titulos);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-right: 0.8rem;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--color-primario-hover);
+}
+
+button[type="reset"] {
+    background-color: #383d47;
+    color: var(--color-texto);
+}
+
+button[type="reset"]:hover {
+    background-color: #4b5260;
+}
