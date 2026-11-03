@@ -396,3 +396,84 @@ button[type="reset"]:hover {
     color: var(--color-texto-secundario);
     margin-bottom: 0;
 }
+
+
+/* ========================================= */
+/* CSS Propio Avanzado - Flexbox */
+/* ========================================= */
+
+/* Contenedor flexible para elementos agrupados */
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.item-flex {
+    flex: 1 1 280px;
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grilla y Cards de Bootstrap personalizadas */
+.card-nefatlantis {
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-nefatlantis:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    border-color: var(--color-primario);
+}
+
+.card-nefatlantis .card-title {
+    font-size: 1.25rem;
+    color: var(--color-primario);
+    margin-bottom: 0.75rem;
+}
+
+.card-nefatlantis .card-text {
+    color: var(--color-texto);
+    font-size: 0.95rem;
+}
+
+/* Acordeon tematico */
+.accordion-nefatlantis .accordion-item {
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-borde);
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.accordion-nefatlantis .accordion-button {
+    background-color: #1a1c22;
+    color: var(--color-texto);
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-nefatlantis .accordion-button:not(.collapsed) {
+    background-color: #242832;
+    color: var(--color-primario);
+}
+
+.accordion-nefatlantis .accordion-button::after {
+    filter: invert(0.8);
+}
+
+.accordion-nefatlantis .accordion-body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border-top: 1px solid var(--color-borde);
+}
