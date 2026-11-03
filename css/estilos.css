@@ -337,3 +337,62 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #4b5260;
 }
+
+
+/* ========================================= */
+/* Etapa 3: Integracion Bootstrap y Posicionamiento */
+/* ========================================= */
+
+/* Header sticky y Navbar personalizada */
+.sitio-header {
+    background-color: var(--color-encabezado);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.bg-nefatlantis {
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primario) !important;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-texto);
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    background-color: var(--color-primario);
+}
+
+.navbar-toggler {
+    border-color: var(--color-borde);
+}
+
+.header-presentacion h1 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+.header-presentacion p {
+    color: var(--color-texto-secundario);
+    margin-bottom: 0;
+}
