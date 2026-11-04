@@ -477,3 +477,111 @@ button[type="reset"]:hover {
     color: var(--color-texto);
     border-top: 1px solid var(--color-borde);
 }
+
+
+/* ========================================= */
+/* Posicionamiento y Badges sobre Imagenes */
+/* ========================================= */
+
+.contenedor-imagen-posicionada {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin: 1.5rem auto;
+}
+
+.badge-enclave {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    padding: 0.35rem 0.75rem;
+    font-family: var(--fuente-titulos);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.badge-peligro {
+    background-color: #8b1e1e;
+    color: #ffffff;
+    border: 1px solid #d94343;
+}
+
+.badge-misterio {
+    background-color: #1a4a68;
+    color: #e0f2fe;
+    border: 1px solid #38bdf8;
+}
+
+.badge-sagrado {
+    background-color: #634a1b;
+    color: #fef3c7;
+    border: 1px solid #f59e0b;
+}
+
+/* ========================================= */
+/* Personalizacion de Componentes Bootstrap */
+/* ========================================= */
+
+/* Botones con estilo propio sobre Bootstrap */
+.btn-primario {
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    color: #ffffff;
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primario:hover {
+    background-color: var(--color-primario-hover);
+    border-color: var(--color-primario-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    background-color: #2b303c;
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
+    font-family: var(--fuente-titulos);
+    padding: 0.6rem 1.4rem;
+    transition: all 0.2s ease;
+}
+
+.btn-secundario:hover {
+    background-color: #383e4d;
+    color: #ffffff;
+}
+
+.btn-outline-primario {
+    border: 1px solid var(--color-primario);
+    color: var(--color-primario);
+    background-color: transparent;
+    font-family: var(--fuente-titulos);
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-primario:hover {
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+
+/* Alertas personalizadas */
+.alert-nefatlantis {
+    background-color: #261f18;
+    border: 1px solid var(--color-primario);
+    color: #ffd8a8;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+}
