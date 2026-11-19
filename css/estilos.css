@@ -559,6 +559,7 @@ section .container {
     font-weight: 700;
     letter-spacing: 0.5px;
     padding: 0.6rem 1.4rem;
+    margin: 0;
     transition: all 0.2s ease;
 }
 
@@ -575,6 +576,7 @@ section .container {
     color: var(--color-texto);
     font-family: var(--fuente-titulos);
     padding: 0.6rem 1.4rem;
+    margin: 0;
     transition: all 0.2s ease;
 }
 
@@ -608,4 +610,192 @@ section .container {
     color: #ffd8a8;
     border-radius: 6px;
     padding: 1rem 1.25rem;
+}
+
+/* ========================================= */
+/* Etapa 4: JavaScript - Modo Claro y Validacion */
+/* ========================================= */
+
+body {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Boton de cambio de tema en la navbar */
+.btn-modo-tema {
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+    .btn-modo-tema {
+        width: 100%;
+        margin-top: 0.4rem;
+    }
+}
+
+/* Paleta y ajustes para Modo Claro */
+body.modo-claro {
+    --color-fondo: #f3ede2;
+    --color-tarjeta: #fcf9f3;
+    --color-texto: #231f1b;
+    --color-texto-secundario: #5a5248;
+    --color-primario: #9e4f1a;
+    --color-primario-hover: #7f3d12;
+    --color-borde: #d3c7b4;
+    --color-encabezado: #e8dfd0;
+}
+
+body.modo-claro h1,
+body.modo-claro h2,
+body.modo-claro h3 {
+    color: #231f1b;
+}
+
+body.modo-claro h2 {
+    color: var(--color-primario);
+}
+
+body.modo-claro h3 {
+    color: #7c3e12;
+}
+
+body.modo-claro .sitio-header {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.modo-claro .navbar-toggler-icon {
+    filter: invert(0.85);
+}
+
+body.modo-claro article {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+body.modo-claro .card-nefatlantis {
+    background-color: var(--color-tarjeta);
+}
+
+body.modo-claro .card-nefatlantis:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+body.modo-claro .item-flex {
+    background-color: var(--color-fondo);
+}
+
+body.modo-claro aside {
+    background-color: #efe5d5;
+}
+
+body.modo-claro table {
+    background-color: #fdfaf4;
+}
+
+body.modo-claro th {
+    color: #231f1b;
+}
+
+body.modo-claro tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+body.modo-claro fieldset {
+    background-color: #f5efe4;
+}
+
+body.modo-claro input[type="text"],
+body.modo-claro input[type="email"],
+body.modo-claro input[type="tel"],
+body.modo-claro select,
+body.modo-claro textarea {
+    background-color: #ffffff;
+    color: var(--color-texto);
+}
+
+body.modo-claro .accordion-nefatlantis .accordion-button {
+    background-color: #eee6d8;
+    color: var(--color-texto);
+}
+
+body.modo-claro .accordion-nefatlantis .accordion-button:not(.collapsed) {
+    background-color: #e3d6c1;
+    color: var(--color-primario);
+}
+
+body.modo-claro .accordion-nefatlantis .accordion-button::after {
+    filter: none;
+}
+
+body.modo-claro .btn-secundario {
+    background-color: #ddd3c2;
+    border-color: var(--color-borde);
+    color: #231f1b;
+}
+
+body.modo-claro .btn-secundario:hover {
+    background-color: #cfc2ac;
+    color: #1a1612;
+}
+
+body.modo-claro .alert-nefatlantis {
+    background-color: #f8ebd4;
+    color: #5c3410;
+}
+
+/* Validacion del formulario de contacto */
+input.campo-invalido,
+textarea.campo-invalido,
+select.campo-invalido {
+    border-color: #d94343;
+    outline: 2px solid rgba(217, 67, 67, 0.25);
+}
+
+.mensaje-error {
+    display: block;
+    color: #f87171;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.mensaje-error:empty {
+    display: none;
+}
+
+body.modo-claro .mensaje-error {
+    color: #b91c1c;
+}
+
+.estado-formulario {
+    margin-top: 1rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.estado-formulario:empty {
+    display: none;
+}
+
+.estado-formulario.estado-error {
+    background-color: #36191b;
+    border: 1px solid #d94343;
+    color: #fecaca;
+}
+
+.estado-formulario.estado-exito {
+    background-color: #162e20;
+    border: 1px solid #2e8b57;
+    color: #bbf7d0;
+}
+
+body.modo-claro .estado-formulario.estado-error {
+    background-color: #fde8e8;
+    border-color: #dc2626;
+    color: #991b1b;
+}
+
+body.modo-claro .estado-formulario.estado-exito {
+    background-color: #e6f6ec;
+    border-color: #15803d;
+    color: #166534;
 }
