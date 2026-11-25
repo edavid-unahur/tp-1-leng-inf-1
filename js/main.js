@@ -13,8 +13,10 @@ function inicializarModoTema() {
 
     function aplicarTema(esClaro) {
         document.body.classList.toggle("modo-claro", esClaro);
-        botonModo.textContent = esClaro ? "🌙 Modo oscuro" : "☀ Modo claro";
+        botonModo.textContent = esClaro ? "🌙" : "☀";
         botonModo.setAttribute("aria-pressed", String(esClaro));
+        botonModo.setAttribute("aria-label", esClaro ? "Cambiar a modo oscuro" : "Cambiar a modo claro");
+        botonModo.setAttribute("title", esClaro ? "Cambiar a modo oscuro" : "Cambiar a modo claro");
     }
 
     // Recuperar preferencia guardada al cargar la pagina

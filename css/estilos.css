@@ -348,17 +348,24 @@ button[type="reset"]:hover {
     background-color: var(--color-encabezado);
     border: 1px solid var(--color-borde);
     border-radius: 6px;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.bg-nefatlantis {
+nav.bg-nefatlantis {
     background-color: transparent !important;
+    border: none;
     border-bottom: 1px solid var(--color-borde);
-    padding-bottom: 0.8rem;
-    margin-bottom: 1rem;
+    border-radius: 0;
+    padding: 0 0 0.6rem 0;
+    margin-bottom: 0.6rem;
+}
+
+nav.bg-nefatlantis ul {
+    justify-content: flex-end;
+    gap: 0.4rem;
 }
 
 .navbar-brand {
@@ -384,8 +391,16 @@ button[type="reset"]:hover {
 }
 
 .navbar-toggler {
-    border-color: var(--color-borde);
+    background-color: transparent;
+    border: 1px solid var(--color-borde);
+    padding: 0.3rem 0.55rem;
     margin: 0;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
 }
 
 .header-presentacion h1 {
@@ -623,6 +638,9 @@ body {
 /* Boton de cambio de tema en la navbar */
 .btn-modo-tema {
     margin: 0;
+    padding: 0.35rem 0.65rem;
+    font-size: 1rem;
+    line-height: 1;
     white-space: nowrap;
 }
 
